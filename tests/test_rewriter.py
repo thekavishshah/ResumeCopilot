@@ -1,4 +1,4 @@
-from bullet_rewriter import rewrite_all, validate_bullet
+from app.ai.rewriter import rewrite_all, validate_bullet
 
 SAMPLE_BULLETS = [
     "Developed automated testing framework using Selenium, reducing QA time by 40%",
