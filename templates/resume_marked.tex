@@ -1,0 +1,176 @@
+
+\documentclass[letterpaper,11pt]{article}
+\usepackage{fontawesome5}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+% Custom font
+\usepackage[default]{lato}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.75in}
+\addtolength{\evensidemargin}{-0.75in}
+\addtolength{\textwidth}{1.5in}
+\addtolength{\topmargin}{-.75in}
+\addtolength{\textheight}{1.5in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule\vspace{-5pt}]
+
+\pdfgentounicode=1
+
+%-------------------------%
+% Custom commands
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}
+    \item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-8pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{5pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-8pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-2pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\definecolor{Black}{RGB}{0, 0, 0}
+\newcommand{\seticon}[1]{\textcolor{Black}{\csname #1\endcsname}}
+
+%-------------------------------------------
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Ayush Sunil Shejwal} \\ \vspace{5pt}
+    (602)-596-5182\;{\texttt{|}\;ashejwal@asu.edu}\;\href{https://www.linkedin.com/in/ayush2204/}{\texttt{|}\;\underline{linkedin.com/in/ayush2204}}\;\href{https://ayushshejwal.vercel.app}{\texttt{|}\;\underline{ayushshejwal.vercel.app}}
+\end{center}
+
+%-----------EDUCATION-----------%
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Arizona State University (Honors)}{Tempe, AZ}
+    {Bachelor of Science in Computer Science (GPA: 3.90 / 4.00)}{May, 2026}
+    \resumeItemListStart
+      \resumeItem{\textbf{Relevant Coursework:} Data Structures and Algorithms (C++, Python, JS), Digital Design Fundamentals, Mobile Application Dev, Human Computer Interaction, Operating Systems, Found. of Machine Learning, Intro to Theoretical Computer Science, Object Oriented Programming, Prob \& Stats, Linear Algebra, Database Management}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------%
+\section{Experience}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {Pebbles AI \href{https://pebblesai.xyz}{\small(\texttt{pebblesai.xyz})}}{August 2025 -- Present}
+    {Technical Product \& AI Intern}{Remote}
+    \resumeItemListStart
+      \resumeItem{<<BULLET_EXP_1_1>>Owned product requirements and roadmap for a local RAG system serving small business knowledge workflows; authored technical specs translating stakeholder needs into engineering priorities across inference stack decisions (PowerInfer $\rightarrow$ vLLM + Qwen2.5-7B), reducing scoping ambiguity and accelerating delivery.}
+      \resumeItem{<<BULLET_EXP_1_2>>Defined success metrics and reliability benchmarks with engineering and stakeholders; identified query latency as the primary adoption blocker and drove architectural tradeoffs that cut response time by 95\% (71.8s $\rightarrow$ 2.5s) while preserving 128K-context multi-document reasoning accuracy.}
+      \resumeItem{<<BULLET_EXP_1_3>>Conducted discovery with small business clients to surface email retrieval pain points; translated findings into a prioritized feature roadmap covering Gmail/Outlook ingestion and GPU-backed deployment, supporting go-to-market readiness.}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {STILED \href{https://thestiled.com}{\small(\texttt{thestiled.com})}}{April 2025 -- Present}
+    {Co-founder \& CTO}{Tempe, AZ}
+    \resumeItemListStart
+      \resumeItem{<<BULLET_EXP_2_1>>Designed and led user research with 50 pilot users (ages 18--31); uncovered that 78\% avoided purchases due to fit and sizing uncertainty, driving a strategic pivot from styling-first to AI-powered virtual try-on --- directly reshaping the core product roadmap.}
+      \resumeItem{<<BULLET_EXP_2_2>>Defined feature prioritization across fit scoring and color matching using Agile sprint cycles; validated decisions through pilot data (89\% feature usefulness, 92.5\% shopping intent), coordinating design and retail partner integration end-to-end.}
+      \resumeItem{<<BULLET_EXP_2_3>>Engineered the full product stack --- Chrome extension, React Native app, Node.js/FastAPI backend, GCP infrastructure (PostgreSQL/Firebase), and Gemini Flash 2.5 for virtual try-on image generation --- with automated scrapers across 30+ retailers; recognized in Business of Fashion and AllThingsFashionTech ahead of beta launch.}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {ASU Center for Carbon Emission Lab}{Aug 2024 -- Dec 2024}
+    {Research Aide}{Tempe, AZ}
+    \resumeItemListStart
+      \resumeItem{<<BULLET_EXP_3_1>>Engineered a Python data pipeline using PIconnect, Pandas, and datetime to extract, clean, validate, and process 500+ industrial time-series datasets (CO2 levels, heat, wind, humidity), producing analysis-ready CSVs.}
+      \resumeItem{<<BULLET_EXP_3_2>>Developed a Flask app with RESTful APIs for tag file uploads, processed data retrieval, and automated reporting, reducing manual intervention and streamlining lab workflows by \textasciitilde30\%.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------%
+\section{Projects}
+\resumeSubHeadingListStart
+
+  \resumeProjectHeading
+    {\textbf{Market Insights AI}, Personal Project $|$ \emph{Python, FastAPI, React, TypeScript, GPT-4, VADER, PostgreSQL, TailwindCSS, D3.js}}{}
+    \resumeItemListStart
+      \resumeItem{<<BULLET_PROJ_1_1>>Built a financial insights platform combining GPT-4 and VADER for AI-powered sentiment analysis and real-time market prediction.}
+      \resumeItem{<<BULLET_PROJ_1_2>>Integrated Alpha Vantage for live stock data and visualized insights using D3.js and ECharts for financial graphs.}
+      \resumeItem{<<BULLET_PROJ_1_3>>Applied ORM concepts using SQLAlchemy and designed scalable APIs with FastAPI, ensuring modularity and speed.}
+    \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\textbf{Eventus}, LA Hacks $|$ \emph{Python, Reflex Dev, Google's Gemini API pro-1.5, News API}}{}
+    \resumeItemListStart
+      \resumeItem{<<BULLET_PROJ_2_1>>Developed a news aggregator app leveraging Google's Gemini API for NLP-based sentiment analysis to mitigate media bias.}
+      \resumeItem{<<BULLET_PROJ_2_2>>Designed a responsive UI with Reflex, using libraries like Styled Components and Zustand for state management.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------SKILLS-----------%
+\section{Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+    \textbf{Product \& Strategy}{: Agile/Scrum, Product Roadmapping, PRD Authoring, Market \& Competitive Analysis, User Research, KPI Definition \& Tracking, A/B Testing, GTM Strategy, Stakeholder Management} \\
+    \textbf{Programming}{: Python, C++, JavaScript, TypeScript, Java, SQL, C, HTML, CSS, Sass, Bash} \\
+    \textbf{Frameworks}{: React.js, React Native, Node.js, Angular, Flask, FastAPI, TailwindCSS, TensorFlow, PyTorch, Scikit-learn, HuggingFace Transformers, Pandas, NumPy, SciPy, Redux} \\
+    \textbf{Databases}{: PostgreSQL, MySQL, MongoDB, Firebase, Supabase} \\
+    \textbf{Cloud \& DevOps}{: AWS (Lambda, S3), Azure Cloud, Git/GitHub, CI/CD (GitHub Actions), Linux/Unix, Railway, Docker} \\
+    \textbf{AI / ML \& LLMs}{: LangChain, OllamaLLM, ChatOpenAI, ChatAnthropic, embeddings \& vector search (Chroma, FAISS), prompt engineering, Pydantic output parsing, OpenCV}
+  }}
+\end{itemize}
+
+%-------------------------------------------
+\end{document}
