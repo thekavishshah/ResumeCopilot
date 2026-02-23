@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+
+# Environment
+.env
+
+# Generated PDF output (test artifacts)
+*.pdf
+
+# macOS
+.DS_Store
+
+# LaTeX aux files (if compiling locally outside the app)
+*.aux
+*.log
+*.out
+*.synctex.gz
+*.fls
+*.fdb_latexmk
